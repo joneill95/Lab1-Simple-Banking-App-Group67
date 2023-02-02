@@ -22,7 +22,7 @@ public class UserTest {
 		//2- Exercise,  run the object under test
 		User testUser = new User (test_username, test_password, test_first_name, test_last_name, test_mobile_number);
 		
-		
+		/*
 		//3- Verify (Assert)
 	    Boolean passed = true;
 		
@@ -54,8 +54,17 @@ public class UserTest {
 		if(passed) {
 			System.out.println("All TC's passed");
 		}
+		*/
+		
+		//Using asserts 
+		assert testUser.getUsername() == test_username;
+		assert testUser.getPassword() == test_password;
+		assert testUser.getFirstName() == test_first_name;
+		assert testUser.getLastName() == test_last_name;
+		assert testUser.getMobileNumber() == test_mobile_number;
+		
+		System.out.println("All Java assertions in the test suite passed (none failed)");
+		
 		
 	}
-	
-	
 }
