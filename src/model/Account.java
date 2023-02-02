@@ -1,6 +1,6 @@
 package model;
 
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -39,6 +39,11 @@ public class Account {
 	}
 	public void setAccountOpeningDate(Date accountOpeningDate) {
 		this.accountOpeningDate = accountOpeningDate;
+	}
+	
+	
+	public String toString() {
+		return accountNumber + ", " + userNameOfAccountHolder + ", " + accountType + ", " + accountOpeningDate;
 	}
 	
 }
