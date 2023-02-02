@@ -3,9 +3,9 @@ package model;
 public class User {
 private String username;
 private String password;
-private String firstName;
-private String lastName;
-private String mobileNumber;
+private String first_name;
+private String last_name;
+private String mobile_number;
 public String getUsername() {
 	return username;
 }
@@ -19,30 +19,34 @@ public void setPassword(String password) {
 	this.password = password;
 }
 public String getFirstName() {
-	return firstName;
+	return first_name;
 }
 public void setFirstName(String firstName) {
-	this.firstName = firstName;
+	this.first_name = firstName;
 }
 public String getLastName() {
-	return lastName;
+	return last_name;
 }
 public void setLastName(String lastName) {
-	this.lastName = lastName;
+	this.last_name = lastName;
 }
 public String getMobileNumber() {
-	return mobileNumber;
+	return mobile_number;
 }
 public void setMobileNumber(String mobileNumber) {
-	this.mobileNumber = mobileNumber;
+	this.mobile_number = mobileNumber;
 }
 public User(String username, String password, String firstName, String lastName, String mobileNumber) {
 	super();
 	this.username = username;
 	this.password = password;
-	this.firstName = firstName;
-	this.lastName = lastName;
-	this.mobileNumber = mobileNumber;
+	this.first_name = firstName;
+	this.last_name = lastName;
+	this.mobile_number = mobileNumber;
+}
+
+public String toString() {
+	return username + ", " + password + ", " + first_name + ", " + last_name + ", " + mobile_number;
 }
 
 }
