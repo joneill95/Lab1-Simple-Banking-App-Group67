@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/app/SimpleBankingApp.java</name>
+			<type>1</type>
+			<location>C:/Users/40261441/Downloads/lab1_artifacts/SimpleBankingApp.java</location>
+		</link>
+	</linkedResources>
 </projectDescription>
