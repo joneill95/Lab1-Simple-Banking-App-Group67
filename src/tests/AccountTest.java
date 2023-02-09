@@ -7,7 +7,14 @@ import model.Account;
 public class AccountTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		/*
+		 // OLD: manual tesing
+		Date test_accountOpeningDate = new Date(2022,10,20);
+		Account testAccount = new Account("1234", "my_password", "Mike", test_accountOpeningDate ); 
+		System.out.println(testAccount.toString());
+		*/
+
 		//Automated testing
 				//1-Setup the object and test data, initialize
 				//See the four steps in: 
@@ -19,7 +26,7 @@ public class AccountTest {
 				//2- Exercise,  run the object under test
 				Account testAccount = new Account (test_accountNumber, test_userNameOfAccountHolder,test_accountType,test_accountOpeningDate);
 				
-				
+				/*
 				//3- Verify (Assert)
 			    Boolean passed = true;
 				
@@ -47,6 +54,15 @@ public class AccountTest {
 				if(passed) {
 					System.out.println("All TC's passed");
 				}
+				*/
+				
+				//Using asserts 
+				assert testAccount.getAccountNumber() == test_accountNumber;
+				assert testAccount.getUserNameOfAccountHolder() == test_userNameOfAccountHolder;
+				assert testAccount.getAccountType() == test_accountType;
+				assert testAccount.getAccountOpeningDate() == test_accountOpeningDate;
+				
+				System.out.println("All Java assertions in the test suite passed (none failed)");
 	}
 
 }
